@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:intal.wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* section starts from here */
+
+section {
+    display: flex;
+    justify-content: right;
+    background: linear-gradient(to right, #0454ff9d 70%, #ffdc16 70% 100%);
+    min-height: 100vh;
+    padding-right: 15%;
+}
+.held {
+    position: relative;
+    background-color: #000;
+    width: 60%;
+    margin: 30px 30px 30px 0;
+    border-radius: 30px;
+}
+.left-side {
+    display: block;
+    position: absolute;
+    top: 10vh;
+    left: -20vw;
+    width: 30vw;
+    height: 70vh;
+    background-color: #ffdc16;
+    border-radius: 20px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 30px 20px;
+}
+a, span {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.info i {
+    color: #000000;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.icons {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    width: 30vw;
+    justify-content: center;
+}
+.icons i {
+    font-size: 2rem;
+    margin-right: 30px;
+}
+.icons i:hover {
+    color: #0479ff;
+}
+.right-side {
+    position: absolute;
+    right: 0;
+    width: 80%;
+    height: 70vh;
+    padding: 70px 0;
+}
+
+
+
+
+
+
+
+/* inputs strat from her */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+form input {
+    height: 30px;
+    border-radius: 10px;
+    width: 100%;
+    border: 2px solid #5aa7ff;
+    outline: none;
+    text-align: center;
+    margin: 0 10px 30px 10px;
+    background-color: #000;
+    color: #ffa600;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px 0;
+}
+form textarea {
+    height: 140px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #5aa7ff;
+    outline: none;
+    background-color: #000;
+    color: #ffa600;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    resize: none;
+    padding: 10px 0;
+    margin: 0 10px 30px 10px;
+}
+form input:hover, textarea:hover {
+    border: 2px solid #0479ff;
+}
+form input:focus, textarea:focus {
+    background-color: #000;
+    border: 2px solid #ffa600;
+}
+form input::placeholder, textarea::placeholder {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+form button {
+    width: 50%;
+    height: 50px;
+    border: 2px solid #0479ff;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+form button:focus, form button:active {
+    border: 2px solid #ffa600;
+    color: #ffa600;
+}
+
+
+
+
+@media (max-width: 765px) {
+    section {
+        background: linear-gradient(to right, #0454ff9d, #ffdc16);
+        padding-right: 0;
+    }
+    .left-side {
+        display: none;
+    }
+    .held {
+        width: 96%;
+        margin: 50px 2%;
+    }
+    .right-side {
+        width: 100%;
+    }
+}

@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:intal.wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover, a:focus {
+    color: #ff764d;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    border-bottom: 1px solid #7a7a7a;
+}
+.title-logo {
+    width: 15%;
+}
+.title-logo img {
+    width: 60%;
+    aspect-ratio: 16/9;
+}
+.nav-icons {
+    display: block;
+}
+.nav-icons a {
+    padding: 0 15px 0 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.bord-right {
+    border-right: 1px solid #fff;
+}
+
+
+/*  end of navbar  */
+
+
+.active {
+    color: #ff764d!important;
+}
+.choice {
+    display: flex;
+    padding: 20px 30px;
+    align-items: center;
+}
+.choice a {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #000;
+    color: #5aa7ff;
+    border: 2px solid #7d8792;
+    outline: none;
+    text-align: center;
+    margin: 0 30px;
+    padding: 8px;
+    border-radius: 20px;
+}
+.choice a:hover {
+    border: 2px solid #0479ff;
+    color: #0479ff;
+}
+.choice a:focus, .choice a:active {
+    border: 2px solid #ffa600;
+    color: #ffa600;
+}
+.special {
+    display: flex;
+    flex-direction: column;
+}
+.special h3 {
+    width: 100%;
+    text-align: center;
+    color: #ffa600;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.Card-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+.Card-container img {
+    width: 100%;
+    height: 70vh;
+}
+.blur {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 8vh;
+    padding: 5px 10px;
+    background: linear-gradient(to top, transparent, #000 25% 90%, transparent);
+    bottom: 0;
+}
+.blur svg {
+    width: 18px;
+    height: 18px;
+    fill: rgb(168, 168, 168);
+    margin: 0 20px 5px 0;
+}
+.blur a {
+    font-size: 18px;
+    width: 70%;
+    color: rgb(168, 168, 168);
+    text-wrap: nowrap;
+}
+.blur a:hover {
+    color: #ff764d;
+}
+.special .extra-mar {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+/* End of section and main body */
+
+.head {
+    width: 80%;
+    background: url('D:/visualcode/websites/repo/assets/REPO.png');
+    background-repeat: repeat-x;
+    background-size: 2000px 5px;
+    margin: 40px 10%;
+    background-position: center center;
+}
+.head p {
+    background-color: #000000;
+    text-align: center;
+    padding: 0 20px;
+    color: #ffd51b;
+    line-height: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+.pad-top {
+    padding: 20px 0 30px 0;
+}
+.BrandName {
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+.BrandName img {
+    width: 100px;
+    height: 50px;
+}
+.BrandName a, .BrandName .no {
+    color: #fff;
+}
+.BrandName .no:hover, .BrandName ul {
+    color: #ff764d;
+}
+.BrandName li::marker {
+    content: none;
+}
+.BrandName ul {
+    padding-left: 0;
+}
+.BrandName li {
+    margin: 10px 0;
+}
+.BrandName span {
+    margin-left: 10px;
+    color: #ffee06;  
+}
+.BrandName span:hover {
+    color: #ff764d;
+}
+.usp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+.usp h5 {
+    color: #ffd51b;
+    padding: 0 10px;
+    border-right: 2px solid #5aa7ff;
+    border-left: 2px solid #0479ff;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+form input {
+    height: 30px;
+    border-radius: 10px;
+    width: 100%;
+    border: 2px solid #5aa7ff;
+    outline: none;
+    text-align: center;
+    margin: 0 10px 20px 10px;
+    background-color: #000;
+    color: #ffa600;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px 0;
+}
+form textarea {
+    height: 140px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #5aa7ff;
+    outline: none;
+    background-color: #000;
+    color: #ffa600;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    resize: none;
+    padding: 10px 0;
+    margin: 0 10px 20px 10px;
+}
+form input:hover, textarea:hover {
+    border: 2px solid #0479ff;
+}
+form input:focus, textarea:focus {
+    background-color: #000;
+    border: 2px solid #ffa600;
+}
+form input::placeholder, textarea::placeholder {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+form button {
+    width: 50%;
+    height: 50px;
+    border: 2px solid #0479ff;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+form button:focus, form button:active {
+    border: 2px solid #ffa600;
+    color: #ffa600;
+}
+.row {
+    width: 100%;
+}
+.quote {
+    margin: 0 30px 20px 20px;
+}
+.quote iframe {
+    width: 100%;
+    max-height: 55vh;
+    border-radius: 20px;
+    border: none;
+}
+
+/*  ending of footer  */
+
+
+.end-page {
+    display: flex;
+    justify-content: right;
+    background-color: #000;
+    width: 100%;
+    border-top: 1px solid #7a7a7a;
+    padding: 10px 10px 0 10px;
+}
+.end-page p {
+    align-items: center;
+}
+
+
+
+/*  starting of media queries   */
+
+
+@media (max-width: 992px) {
+    .blur a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 765px) {
+    .blur a {
+        font-size: 18px;
+    }
+    .Card-container {
+        padding: 0 0 0 20px;
+    }
+}
+@media (min-width: 577px) and (max-width: 785px) {
+    .BrandName {
+        width: 41.67%;
+    }
+    .dis-7 {
+        width: 58.33%;
+    }
+}
+@media (max-width: 576px) {
+    .title-logo img {
+        width: 100%;
+    }
+    .head {
+        width: 100%;
+        margin: 40px 0;
+    }
+    .head p {
+        width: 240px;
+    }
+    .choice a {
+        font-size: 14px;
+        width: 110.66px;
+        height: 62px;
+    }
+    .nav-icons {
+        display: none;
+    }
+}
