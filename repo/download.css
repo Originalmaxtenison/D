@@ -136,7 +136,7 @@ a:hover, a:focus {
 
 .head {
     width: 80%;
-    background: url('D:/visualcode/websites/repo/assets/REPO.png');
+    background: url('https://raw.githubusercontent.com/10eson/Gallery/main/REPO.png');
     background-repeat: repeat-x;
     background-size: 2000px 5px;
     margin: 40px 10%;
